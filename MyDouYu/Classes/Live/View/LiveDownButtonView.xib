@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g1e-jZ-Yft" customClass="LiveDownButtonView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bcl-yL-v7r"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="魔兽世界" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZhU-8Z-UkX">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="oIO-3v-a6H"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_selected_14x14_" translatesAutoresizingMaskIntoConstraints="NO" id="ibm-qc-E30">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="14" id="WWr-gP-oIo"/>
+                        <constraint firstAttribute="height" constant="14" id="sID-OC-Y8M"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_vline_0x123_" translatesAutoresizingMaskIntoConstraints="NO" id="ZMc-XB-7nf">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="3xC-lf-ccf"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_vline_0x123_" translatesAutoresizingMaskIntoConstraints="NO" id="rjv-LI-rdc">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="pL3-Ej-Xmd"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_hline_123x0_" translatesAutoresizingMaskIntoConstraints="NO" id="NOb-1z-ZU8">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="06k-QS-5mH"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="column_hline_123x0_" translatesAutoresizingMaskIntoConstraints="NO" id="I4M-SF-dhG">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ljO-nW-r6U"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZMc-XB-7nf" secondAttribute="bottom" id="0D0-fx-GxG"/>
+                <constraint firstAttribute="trailing" secondItem="ibm-qc-E30" secondAttribute="trailing" id="355-jG-Xlw"/>
+                <constraint firstItem="ZhU-8Z-UkX" firstAttribute="top" secondItem="bcl-yL-v7r" secondAttribute="bottom" constant="5" id="3qs-Me-M9u"/>
+                <constraint firstItem="ZhU-8Z-UkX" firstAttribute="leading" secondItem="g1e-jZ-Yft" secondAttribute="leading" id="4HZ-IB-6Bq"/>
+                <constraint firstItem="NOb-1z-ZU8" firstAttribute="leading" secondItem="g1e-jZ-Yft" secondAttribute="leading" id="6EM-uh-9RS"/>
+                <constraint firstItem="bcl-yL-v7r" firstAttribute="height" secondItem="g1e-jZ-Yft" secondAttribute="height" multiplier="0.333" id="Aqy-tj-UjQ"/>
+                <constraint firstAttribute="bottom" secondItem="rjv-LI-rdc" secondAttribute="bottom" id="CQb-Mc-L82"/>
+                <constraint firstAttribute="bottom" secondItem="NOb-1z-ZU8" secondAttribute="bottom" id="Hf8-w5-r5v"/>
+                <constraint firstItem="I4M-SF-dhG" firstAttribute="leading" secondItem="g1e-jZ-Yft" secondAttribute="leading" id="OOR-aJ-FFD"/>
+                <constraint firstItem="bcl-yL-v7r" firstAttribute="centerY" secondItem="g1e-jZ-Yft" secondAttribute="centerY" multiplier="0.8" id="RZj-Tw-6S0"/>
+                <constraint firstAttribute="trailing" secondItem="ZhU-8Z-UkX" secondAttribute="trailing" id="Tlb-wT-Qvq"/>
+                <constraint firstItem="rjv-LI-rdc" firstAttribute="top" secondItem="g1e-jZ-Yft" secondAttribute="top" id="Tne-qf-XZZ"/>
+                <constraint firstAttribute="bottom" secondItem="ibm-qc-E30" secondAttribute="bottom" id="ULn-ep-6mW"/>
+                <constraint firstItem="bcl-yL-v7r" firstAttribute="centerX" secondItem="g1e-jZ-Yft" secondAttribute="centerX" id="Yk9-iW-G4f"/>
+                <constraint firstItem="I4M-SF-dhG" firstAttribute="top" secondItem="g1e-jZ-Yft" secondAttribute="top" id="aAy-Xs-5fw"/>
+                <constraint firstItem="bcl-yL-v7r" firstAttribute="width" secondItem="g1e-jZ-Yft" secondAttribute="width" multiplier="0.333" id="lh2-rV-XTF"/>
+                <constraint firstItem="ZMc-XB-7nf" firstAttribute="leading" secondItem="NOb-1z-ZU8" secondAttribute="trailing" id="mX0-d3-w56"/>
+                <constraint firstAttribute="trailing" secondItem="ZMc-XB-7nf" secondAttribute="trailing" id="nq8-Ab-gph"/>
+                <constraint firstAttribute="trailing" secondItem="I4M-SF-dhG" secondAttribute="trailing" id="son-Ic-2Am"/>
+                <constraint firstItem="rjv-LI-rdc" firstAttribute="leading" secondItem="g1e-jZ-Yft" secondAttribute="leading" id="t9p-Az-OcM"/>
+                <constraint firstItem="ZMc-XB-7nf" firstAttribute="top" secondItem="g1e-jZ-Yft" secondAttribute="top" id="yWB-Sz-4B8"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="checkIconView" destination="ibm-qc-E30" id="iag-t2-tBT"/>
+                <outlet property="tagIconView" destination="bcl-yL-v7r" id="8Rr-N9-3xp"/>
+                <outlet property="tagNameLabel" destination="ZhU-8Z-UkX" id="Teb-0s-Eeg"/>
+            </connections>
+            <point key="canvasLocation" x="351" y="226"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="column_hline_123x0_" width="1" height="1"/>
+        <image name="column_selected_14x14_" width="14" height="14"/>
+        <image name="column_vline_0x123_" width="1" height="1"/>
+    </resources>
+</document>

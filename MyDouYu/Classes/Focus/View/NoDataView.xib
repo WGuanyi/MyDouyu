@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="4I7-Dh-CPn" customClass="NoDataView">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_data_follow_70x70_" translatesAutoresizingMaskIntoConstraints="NO" id="IpK-gf-Kv1">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="Wjf-5x-x5l"/>
+                        <constraint firstAttribute="width" constant="70" id="x0E-OV-iu6"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据，多关注些主播吧" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9b-Qk-WLb">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="eni-nv-UP7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="IpK-gf-Kv1" firstAttribute="centerY" secondItem="4I7-Dh-CPn" secondAttribute="centerY" id="3jD-fS-hw4"/>
+                <constraint firstAttribute="trailing" secondItem="Z9b-Qk-WLb" secondAttribute="trailing" id="ToA-7D-ldm"/>
+                <constraint firstItem="Z9b-Qk-WLb" firstAttribute="leading" secondItem="4I7-Dh-CPn" secondAttribute="leading" id="VEN-eb-RuO"/>
+                <constraint firstItem="Z9b-Qk-WLb" firstAttribute="top" secondItem="IpK-gf-Kv1" secondAttribute="bottom" id="WiV-2E-2fk"/>
+                <constraint firstItem="IpK-gf-Kv1" firstAttribute="centerX" secondItem="4I7-Dh-CPn" secondAttribute="centerX" id="i6h-Uy-Bck"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="293.5" y="224"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_no_data_follow_70x70_" width="70" height="70"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="NWw-gC-DcS" customClass="MineTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NWw-gC-DcS" id="C9K-1p-Lvp">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_my_remind_18x18_" translatesAutoresizingMaskIntoConstraints="NO" id="tx9-pE-Y0k">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="AcM-TP-vi7"/>
+                            <constraint firstAttribute="width" constant="18" id="GkI-cy-TQV"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image_my_arrow_rigth_gray_22x22_" translatesAutoresizingMaskIntoConstraints="NO" id="a8J-Ia-JAY">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="8rq-gS-Vzx"/>
+                            <constraint firstAttribute="width" constant="22" id="GhA-hP-HIw"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开播提醒" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CA-tu-rQI">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="XOM-yf-ztl"/>
+                            <constraint firstAttribute="width" constant="100" id="cFh-Tx-D2n"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ym-j2-Evu">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JYO-JW-2Fe"/>
+                            <constraint firstAttribute="width" constant="100" id="hcm-f0-Sq9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7CA-tu-rQI" firstAttribute="leading" secondItem="tx9-pE-Y0k" secondAttribute="trailing" constant="10" id="4Uy-E6-rkO"/>
+                    <constraint firstItem="7CA-tu-rQI" firstAttribute="centerY" secondItem="C9K-1p-Lvp" secondAttribute="centerY" id="EDm-3h-mEq"/>
+                    <constraint firstAttribute="trailing" secondItem="a8J-Ia-JAY" secondAttribute="trailing" constant="10" id="MHy-jS-56S"/>
+                    <constraint firstItem="a8J-Ia-JAY" firstAttribute="centerY" secondItem="C9K-1p-Lvp" secondAttribute="centerY" id="Ods-2b-jQ2"/>
+                    <constraint firstItem="8ym-j2-Evu" firstAttribute="centerY" secondItem="C9K-1p-Lvp" secondAttribute="centerY" id="g73-fO-LI5"/>
+                    <constraint firstItem="tx9-pE-Y0k" firstAttribute="centerY" secondItem="C9K-1p-Lvp" secondAttribute="centerY" id="hUX-oJ-MGc"/>
+                    <constraint firstItem="a8J-Ia-JAY" firstAttribute="leading" secondItem="8ym-j2-Evu" secondAttribute="trailing" constant="5" id="xUx-8h-yju"/>
+                    <constraint firstItem="tx9-pE-Y0k" firstAttribute="leading" secondItem="C9K-1p-Lvp" secondAttribute="leading" constant="15" id="yQW-4h-twc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="tx9-pE-Y0k" id="xfe-et-iDS"/>
+                <outlet property="subtitleLabel" destination="8ym-j2-Evu" id="CWU-cU-Edl"/>
+                <outlet property="titleLabel" destination="7CA-tu-rQI" id="PtR-f6-6bY"/>
+            </connections>
+            <point key="canvasLocation" x="211" y="239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="image_my_arrow_rigth_gray_22x22_" width="22" height="22"/>
+        <image name="image_my_remind_18x18_" width="18" height="18"/>
+    </resources>
+</document>

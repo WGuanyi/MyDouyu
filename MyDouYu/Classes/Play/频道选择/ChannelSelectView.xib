@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="0Fh-UX-2Oa" customClass="ChannelSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="主线路" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CO-Ot-q4d">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="QT5-0T-ppX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="909-EH-OFH">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Yr2-fF-xAK"/>
+                        <constraint firstAttribute="width" constant="80" id="uyf-Vg-1Z7"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="高清"/>
+                    <connections>
+                        <action selector="btnClick:" destination="0Fh-UX-2Oa" eventType="touchUpInside" id="EyB-2X-d7z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlf-vk-PB6">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="9qs-bj-ENN"/>
+                        <constraint firstAttribute="height" constant="30" id="KGw-jp-VQv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="普清"/>
+                    <connections>
+                        <action selector="btnClick:" destination="0Fh-UX-2Oa" eventType="touchUpInside" id="q1g-1m-shB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQY-cj-f6n">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="H3Y-w8-aPW"/>
+                        <constraint firstAttribute="height" constant="30" id="IY2-xX-ccH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="超清"/>
+                    <connections>
+                        <action selector="btnClick:" destination="0Fh-UX-2Oa" eventType="touchUpInside" id="nbb-oO-Unj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="909-EH-OFH" firstAttribute="leading" secondItem="pQY-cj-f6n" secondAttribute="trailing" constant="5" id="5vf-S6-t86"/>
+                <constraint firstItem="pQY-cj-f6n" firstAttribute="top" secondItem="6CO-Ot-q4d" secondAttribute="bottom" constant="5" id="8WV-3M-XVB"/>
+                <constraint firstItem="909-EH-OFH" firstAttribute="centerX" secondItem="0Fh-UX-2Oa" secondAttribute="centerX" id="Mfl-Ub-c4k"/>
+                <constraint firstItem="909-EH-OFH" firstAttribute="top" secondItem="6CO-Ot-q4d" secondAttribute="bottom" constant="5" id="Nr4-3O-hh1"/>
+                <constraint firstItem="pQY-cj-f6n" firstAttribute="leading" secondItem="0Fh-UX-2Oa" secondAttribute="leading" constant="5" id="STY-hq-Lnd"/>
+                <constraint firstItem="6CO-Ot-q4d" firstAttribute="leading" secondItem="0Fh-UX-2Oa" secondAttribute="leading" constant="5" id="Seo-eZ-H7i"/>
+                <constraint firstItem="Qlf-vk-PB6" firstAttribute="top" secondItem="6CO-Ot-q4d" secondAttribute="bottom" constant="5" id="Vom-GM-yXR"/>
+                <constraint firstItem="909-EH-OFH" firstAttribute="leading" secondItem="pQY-cj-f6n" secondAttribute="trailing" constant="5" id="Zqi-2A-Xdu"/>
+                <constraint firstItem="909-EH-OFH" firstAttribute="centerX" secondItem="0Fh-UX-2Oa" secondAttribute="centerX" id="baa-J2-vQu"/>
+                <constraint firstAttribute="trailing" secondItem="Qlf-vk-PB6" secondAttribute="trailing" constant="5" id="f4L-dY-hlu"/>
+                <constraint firstItem="6CO-Ot-q4d" firstAttribute="top" secondItem="0Fh-UX-2Oa" secondAttribute="top" constant="10" id="fCZ-SA-UbL"/>
+                <constraint firstAttribute="trailing" secondItem="6CO-Ot-q4d" secondAttribute="trailing" id="pSN-QV-iBH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="5vf-S6-t86"/>
+                    <exclude reference="Mfl-Ub-c4k"/>
+                    <exclude reference="Zqi-2A-Xdu"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="highDefinitionBtn" destination="909-EH-OFH" id="Hut-qM-jwX"/>
+                <outlet property="normalDefinitionBtn" destination="Qlf-vk-PB6" id="G7h-BZ-y6u"/>
+                <outlet property="superDefinitionBtn" destination="pQY-cj-f6n" id="chg-so-zaK"/>
+                <outlet property="titleLabel" destination="6CO-Ot-q4d" id="fEn-4a-nvZ"/>
+            </connections>
+            <point key="canvasLocation" x="202" y="281"/>
+        </view>
+    </objects>
+</document>

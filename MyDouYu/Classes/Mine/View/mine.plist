@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>开播提醒</string>
+			<key>image</key>
+			<string>clock</string>
+			<key>class</key>
+			<string>StartRemindVIewController</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>票务中心</string>
+			<key>image</key>
+			<string>icon_ticket</string>
+			<key>class</key>
+			<string>TicketCenterViewController</string>
+		</dict>
+		<dict>
+			<key>subtitle</key>
+			<string>玩游戏领鱼丸</string>
+			<key>title</key>
+			<string>游戏中心</string>
+			<key>image</key>
+			<string>image_game</string>
+			<key>class</key>
+			<string>GameCenterViewController</string>
+		</dict>
+	</array>
+</array>
+</plist>
